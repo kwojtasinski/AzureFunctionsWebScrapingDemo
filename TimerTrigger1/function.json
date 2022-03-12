@@ -1,0 +1,21 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "out",
+      "databaseName": "CHANGE_ME",
+      "collectionName": "CHANGE_ME",
+      "createIfNotExists": true,
+      "connectionStringSetting": "CHANGE_ME",
+      "partitionKey": "CHANGE_ME"
+    }
+  ]
+}
